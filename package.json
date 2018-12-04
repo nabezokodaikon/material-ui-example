@@ -1,0 +1,24 @@
+{
+  "name": "material-ui-example",
+  "version": "1.0.0",
+  "description": "Materal-UI Example",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --outDir dist --sourceMap src/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabezokodaikon/material-ui-example.git"
+  },
+  "author": "nabezokodaikon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nabezokodaikon/material-ui-example/issues"
+  },
+  "homepage": "https://github.com/nabezokodaikon/material-ui-example#readme"
+}
