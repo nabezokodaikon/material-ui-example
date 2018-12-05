@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Materal-UI Example",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^10.12.12"
+  },
   "devDependencies": {
     "typescript": "^3.2.1"
   },
