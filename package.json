@@ -17,6 +17,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
+    "@zeit/next-source-maps": "0.0.3",
     "typescript": "^3.2.1"
   },
   "scripts": {
