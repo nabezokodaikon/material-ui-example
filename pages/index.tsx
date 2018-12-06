@@ -1,5 +1,8 @@
 import * as React from "react"
-import Button from "@material-ui/core/Button"
+// import Button from "@material-ui/core/Button"
+import {
+    Button
+} from "@material-ui/core"
 import * as style from "../css/style.css"
 
 interface HelloProps { compiler: string; framework: string; }
