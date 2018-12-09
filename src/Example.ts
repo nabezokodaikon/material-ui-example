@@ -1,7 +1,3 @@
-///<reference path="Sub.ts" />
-
-import doc = Docking.Dock;
-
 class ClickCounter {
 
   private count = 0;
@@ -9,8 +5,6 @@ class ClickCounter {
   registerClick(): void {
     this.count++;
     console.log(this.count)
-    const d = new doc();
-    d.call()
   }
 }
 
