@@ -1,3 +1,7 @@
 .example {
-  color: #FF0000;
+  /* color: #FF0000; */
+}
+
+.appButtonSize {
+  width: 3rem;
 }
