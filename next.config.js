@@ -1,9 +1,6 @@
 const withPlugins = require('next-compose-plugins')
-const withSourceMaps = require('@zeit/next-source-maps')({
-  devtool: "hidden-source-map"
-})
+const withSourceMaps = require('@zeit/next-source-maps')
 const withTypescript = require('@zeit/next-typescript')
-const withCSS = require('@zeit/next-css')
 
 module.exports = withPlugins([
   [withSourceMaps, {
@@ -11,9 +8,9 @@ module.exports = withPlugins([
       return config
     }
   }],
-  [withTypescript
-  ], 
-  [withCSS, {
-    cssModules: true
+  [withTypescript, {
+    webpack(config, options) {
+      return config
+    }
   }]
 ])
