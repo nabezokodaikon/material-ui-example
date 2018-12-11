@@ -38,6 +38,10 @@ import SideBar from "../components/SideBar"
 
 // const styles = css `p { color: hotpink }`;
 
+import css from "styled-jsx/css"
+import styles from "../css/styles";
+const red = css`p { color: hotpink; }`
+
 export default class Hello extends React.Component {
 
   render() {
@@ -69,6 +73,13 @@ export default class Hello extends React.Component {
               }
             `}</style>
           </p>
+          <div>
+            <style jsx>{styles}</style>
+            <style jsx>{red}</style>
+            <p>
+              HEllo 2
+            </p>
+          </div>
         </div>
       </div>
     )
