@@ -5,7 +5,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <AppBar>
+      <AppBar position="sticky">
         <h1>Material-UI Example</h1>
       </AppBar>
     );
