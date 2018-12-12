@@ -38,19 +38,20 @@ import SideBar from "../components/SideBar"
 
 // const styles = css `p { color: hotpink }`;
 
-import css from "styled-jsx/css"
-import styles from "../css/styles";
-const red = css`p { color: hotpink; }`
+// import styles from "../css/styles";
+// const red = css`p { color: hotpink; }`
+import layout from "../css/layout";
 
 export default class Hello extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="root">
+        <style jsx>{layout}</style>
         <Header/>
         <SideBar />
         <h1>Hello styled-jsx!</h1>
-        <div >
+        <div>
           <Button href="google.com" variant="contained" color="primary">
             Hello Material-UI
           </Button>
@@ -67,15 +68,8 @@ export default class Hello extends React.Component {
           </IconButton>
           <p>
             Hello styled-jsx !
-            <style jsx>{`
-              p {
-                color: #FF0000;
-              }
-            `}</style>
           </p>
           <div>
-            <style jsx>{styles}</style>
-            <style jsx>{red}</style>
             <p>
               HEllo 2
             </p>
